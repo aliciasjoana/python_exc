@@ -1,0 +1,26 @@
+alunos = ['Caldara', 'Rei do baile','Rainha do baile'] 
+while True:
+    opcao = int(input("Digite 0 para sair, 1 para cadastrar um novo aluno, 2 cadastrar onde quero cadastrar, 3 para excluir pela posicao e 4 para excluir pelo nome e 5 para :"))
+    match opcao:
+        case 0:
+         break 
+        case 1:
+         aluno = input("Alunos: ")
+         alunos.append(aluno)
+        case 2: 
+         aluno = input("Alunos: ")
+         posicao = int(input("Posição: "))
+         alunos.insert(posicao,aluno)
+        case 3:
+         indice = int(input("indice: "))
+         alunos.pop(indice)
+        case 4:
+            aluno = input("Aluno:")
+            alunos.remove(aluno)
+# permite inserir e onde eu quero inserir
+# append é uma funçao que vai inserir alguem no final da lista PROVA
+# pop serve para exluir o elemento da lista
+# exlui a primeira ocorrencia do que eu to passando
+# sort ordena
+print(alunos)       
+# FIFO = FILA, LIFO = PILHA
